@@ -36,7 +36,7 @@ CXXFLAGS = -O2 -march=native -g -Wall -pthread -D_LARGEFILE_SOURCE -D_FILE_OFFSE
 LDFLAGS  = 
 
 OBJS   = recfriio.o usbops.o error.o IoThread.o Recordable.o AbstractFriio.o FriioWhite.o FriioBlack.o FriioWhiteWrapper.o FriioExpress.o $(B25_OBJS) $(HDUS_OBJS) $(UDP_OBJS) $(TSSL_OBJS)
-LIBS   = -lpthread -lboost_thread-mt -lboost_filesystem `pkg-config --libs glib-2.0`
+LIBS   = -lpthread -lboost_thread-mt -lboost_filesystem -lboost_system `pkg-config --libs glib-2.0`
 TARGET = $(DIST)/recfriio
 DEPEND = Makefile.dep
 

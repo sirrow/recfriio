@@ -5,6 +5,7 @@
 #include <netdb.h>
 #include <arpa/inet.h>
 #include <string>
+#include <unistd.h>
 
 
 class Udp
